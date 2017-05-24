@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Todo List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="assets/css/reset.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body style="-webkit-app-region:drag;">
+    <div id="bar"><h1>Todo</h1></div>
+    <header>
+        <input type="text" placeholder="Enter an activity.." id="input">
+        <button id="add"><img src="assets/img/add_icon.svg" alt="Add Button"></button>
+    </header>
+    <div class="listc container">
+        <!-- Uncompleted Tasks -->
+        <ul class="todo" id="todo"></ul>
+
+        <!-- Completed Tasks -->
+        <ul class="todo" id="completed"></ul>
+
+    </div>
+
+
+
+
+    <!--  <script type="text/javascript" src="assets/js/script.js"></script> -->
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script>
+    require('./renderer.js');
+    </script>
+</body>
+
+</html>
